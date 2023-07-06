@@ -1,10 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
 
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #D9D9D9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }

@@ -1,12 +1,22 @@
 import { Route, Routes, Link } from "react-router-dom";
+import Header from "./components/Header";
+import Welcome from "./pages/Welcome";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 import "./styles/App.css";
 
 function App() {
-  console.log(import.meta.env.VITE_FIREBASE_API_KEY);
   return (
     <>
-      <h1 className="font-bold text-3xl">Hello World!</h1>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 }
