@@ -1,8 +1,15 @@
-const Welcome = () => {
+import { useEffect } from "react";
+import Header from "../../components/Header";
+
+const Welcome = ({changePage}) => {
+  useEffect(() => {
+    changePage("welcome");
+  },[]);
   return (
-    <main>
-      <h2>Welcome Here!</h2>
-    </main>
+    <>
+      <Header/>
+      <main></main>
+    </>
   );
 };
 

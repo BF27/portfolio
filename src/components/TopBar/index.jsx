@@ -5,14 +5,14 @@ import MobileNav from "./components/MobileNav";
 
 const TopBar = () => {
   return (
-    <header className="text-blue border-b-4 p-0 m-0">
+    <div className="text-blue border-b-4 p-0 m-0">
       <div className="container mx-auto flex justify-between">
         <Logo />
         <DesktopNav />
         <HeaderTitle />
         <MobileNav />
       </div>
-    </header>
+    </div>
   );
 };
 
