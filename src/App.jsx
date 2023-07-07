@@ -1,5 +1,5 @@
 import { Route, Routes, Link } from "react-router-dom";
-import Header from "./components/Header";
+import TopBar from "./components/TopBar";
 import Welcome from "./pages/Welcome";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -10,7 +10,7 @@ import "./styles/App.css";
 function App() {
   return (
     <>
-      <Header />
+      <TopBar />
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/about" element={<About />} />
