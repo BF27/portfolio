@@ -1,7 +1,13 @@
-const About = () => {
-  return (
-    <h1>About</h1>
-  )
-}
+import { useEffect } from "react";
+import Header from "../../components/Header";
 
-export default About
+const About = ({ changePage }) => {
+  
+  useEffect(() => {
+    changePage("about");
+  }, []);
+
+  return <Header />;
+};
+
+export default About;

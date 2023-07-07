@@ -1,8 +1,14 @@
-import React from 'react'
+import { useEffect } from 'react';
+import Header from '../../components/Header'
 
-const Projects = () => {
+const Projects = ({changePage}) => {
+
+  useEffect(() => {
+    changePage("projects");
+  },[]);
+
   return (
-    <h1>Projects</h1>
+    <Header />
   )
 }
 

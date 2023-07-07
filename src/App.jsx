@@ -21,9 +21,9 @@ const changePage = (page) => {
       <ActualPageContext.Provider value={page}>
       <Routes>
         <Route path="/" element={<Welcome changePage={changePage}/>} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About changePage={changePage}/>} />
+        <Route path="/projects" element={<Projects changePage={changePage}/>} />
+        <Route path="/contact" element={<Contact changePage={changePage}/>} />
       </Routes>
       </ActualPageContext.Provider>
     </>

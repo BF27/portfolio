@@ -1,13 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Header from "../../components/Header";
 
-const Welcome = ({changePage}) => {
+const Welcome = ({ changePage }) => {
   useEffect(() => {
     changePage("welcome");
-  },[]);
+  }, []);
+
   return (
     <>
-      <Header/>
+      <Header />
       <main></main>
     </>
   );

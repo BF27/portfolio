@@ -1,7 +1,11 @@
-const Contact = () => {
-  return (
-    <h1>Contact</h1>
-  )
-}
+import { useEffect } from "react";
+import Header from "../../components/Header";
 
-export default Contact
+const Contact = ({ changePage }) => {
+  useEffect(() => {
+    changePage("contact");
+  }, []);
+  return <Header />;
+};
+
+export default Contact;
