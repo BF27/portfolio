@@ -1,15 +1,24 @@
-import { useState } from "react";
+import { useContext, useEffect } from "react";
+import {
+  mobileNavContext,
+  toggleMobileNavContext,
+} from "../../../../contexts/toggleMobileNavContext";
 import "./MobileNav.css";
 
 const MobileNav = () => {
-  const [opened, setOpened] = useState(false);
+  const toggleMobileNav = useContext(toggleMobileNavContext);
+  const opened = useContext(mobileNavContext);
   const clicked = () => {
-    setOpened(!opened)
-  }
+    toggleMobileNav();
+  };
 
   return (
     <nav className="mobile-navigation w-1/4 px-6 flex justify-center items-center md:hidden">
-      <div id="hamburger-icon" onClick={clicked} className={`w-full ${opened ? "open" : ""}`}>
+      <div
+        id="hamburger-icon"
+        onClick={clicked}
+        className={`w-full ${opened ? "open" : ""}`}
+      >
         <span></span>
         <span></span>
         <span></span>
