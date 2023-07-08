@@ -6,7 +6,7 @@ const MobileNavPage = () => {
 
   const toggleMobileNav = useContext(toggleMobileNavContext);
   return (
-    <nav className="flex flex-col items-center justify-center h-full">
+    <nav className="h-full flex items-center justify-center">
       <ul className="flex flex-col items-center justify-center gap-6">
         <li>
           <Link
