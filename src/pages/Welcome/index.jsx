@@ -26,7 +26,7 @@ const Welcome = ({ changePage }) => {
   return (
     <>
       <Header />
-      <main>
+      <main className="mb-20">
         <div className="container mx-auto flex flex-col items-center gap-6 py-12">
           <h3 className="md:w-4/6 text-blue text-3xl">My skills</h3>
           <div className="md:w-4/6 flex flex-wrap gap-5 justify-center">
