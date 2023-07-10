@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 
 import "./styles/App.css";
 import MobileNavPage from "./components/MobileNavPage";
+import Footer from "./components/Footer";
 
 function App() {
   const [page, setPage] = useState("welcome");
@@ -51,6 +52,7 @@ function App() {
               </Routes>
             )}
           </ActualPageContext.Provider>
+          <Footer />
         </toggleMobileNavContext.Provider>
       </mobileNavContext.Provider>
     </>
