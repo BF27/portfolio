@@ -23,7 +23,7 @@ const Projects = ({ changePage }) => {
         <h3 className="text-blue text-2xl sm:text-3xl md:w-4/6">
           Check them out!
         </h3>
-        <div className="md:w-4/6 flex flex-wrap gap-6">
+        <div className="md:w-4/6 flex flex-wrap justify-center gap-6">
           {projects?.map((project, i) => (
             <ProjectCard project={project} key={i} />
           ))}
