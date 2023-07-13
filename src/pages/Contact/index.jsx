@@ -14,6 +14,7 @@ const Contact = ({ changePage }) => {
         <div className="container border-4 border-blue md:w-1/2 mx-4 p-4">
           <ContactForm />
         </div>
+        <div className="text-blue upppercase">Or send me an email to: <a href="mailto:farkas.bence27@gmail.com">farkas.bence27@gmail.com</a></div>
       </main>
     </>
   );
