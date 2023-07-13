@@ -19,10 +19,6 @@ const Welcome = ({ changePage }) => {
     changePage("welcome");
   }, []);
 
-  useEffect(() => {
-    console.log(skills)
-  }, [skills]);
-
   return (
     <>
       <Header />
