@@ -12,7 +12,7 @@ const About = ({ changePage }) => {
       <Header />
       <main className="mb-20 pt-8 w-full flex justify-center">
         <div className="container mx-auto flex justify-center">
-          <div className="w-4/6 flex items-end">
+          <div className="md:w-4/6 mx-4 md:mx-0 flex items-end">
             <div className=" lg:w-2/3 text-blue">
               <h3 className="text-3xl w-full mb-6">Hi!</h3>
               <p>
