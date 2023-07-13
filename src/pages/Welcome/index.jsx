@@ -13,9 +13,6 @@ const Welcome = ({ changePage }) => {
       setSkills(skillDocs.docs.map((doc) => doc.data()));
     };
     getSkills();
-  }, []);
-
-  useEffect(() => {
     changePage("welcome");
   }, []);
 
