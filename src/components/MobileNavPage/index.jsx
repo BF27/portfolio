@@ -9,7 +9,7 @@ const MobileNavPage = () => {
       <ul className="p-6 flex flex-col items-center justify-center gap-6">
         <li>
           <Link
-            to="/about"
+            to="/"
             className="text-4xl text-blue font-fontHeading uppercase"
             onClick={toggleMobileNav}
           >
