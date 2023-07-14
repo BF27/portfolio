@@ -6,7 +6,6 @@ import {
   mobileNavContext,
 } from "./contexts/toggleMobileNavContext";
 import TopBar from "./components/TopBar";
-import Welcome from "./pages/Welcome";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -36,9 +35,8 @@ function App() {
               <MobileNavPage />
             ) : (
               <Routes>
-                <Route path="/" element={<Welcome changePage={changePage} />} />
                 <Route
-                  path="/about"
+                  path="/"
                   element={<About changePage={changePage} />}
                 />
                 <Route
