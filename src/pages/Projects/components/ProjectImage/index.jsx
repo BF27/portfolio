@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const ProjectImage = ({imgUrl, page}) => {
+const ProjectImage = ({ imgUrl, page }) => {
   return (
     <div className="overflow-hidden">
+      {page ? (
         <a href={page} target="_blank">
           <img
             src={imgUrl}
@@ -10,8 +11,15 @@ const ProjectImage = ({imgUrl, page}) => {
             className="hover:scale-150 duration-500 ease-in-out"
           />
         </a>
-      </div>
-  )
-}
+      ) : (
+        <img
+          src={imgUrl}
+          alt="ben&jud"
+          className="hover:scale-150 duration-500 ease-in-out"
+        />
+      )}
+    </div>
+  );
+};
 
-export default ProjectImage
+export default ProjectImage;
