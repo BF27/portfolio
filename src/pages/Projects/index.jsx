@@ -19,14 +19,16 @@ const Projects = ({ changePage }) => {
   return (
     <>
       <Header />
-      <main className="container mx-auto flex flex-col items-center px-4 justify-center mt-6 mb-32 gap-4">
-        <h3 className="text-blue text-2xl sm:text-3xl md:w-4/6">
-          Check them out!
-        </h3>
-        <div className="md:w-4/6 flex flex-wrap justify-center gap-6">
-          {projects?.map((project, i) => (
-            <ProjectCard project={project} key={i} />
-          ))}
+      <main className="container mx-auto flex flex-col items-center px-4 justify-center mb-32 gap-4">
+        <div className="md:container md:mx-auto flex flex-col items-center justify-center">
+          <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col">
+            <h3 className="text-3xl w-full mb-6 mt-14 text-blue">Check them out!</h3>
+            <div className="flex flex-wrap justify-center md:justify-between gap-4">
+              {projects?.map((project, i) => (
+                <ProjectCard project={project} key={i} />
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </>

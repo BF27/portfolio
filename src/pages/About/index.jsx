@@ -21,10 +21,10 @@ const About = ({ changePage }) => {
     <>
       <Header />
       <main className="mb-24 pt-8 w-full flex justify-center">
-        <div className="container mx-auto flex flex-col items-center gap-4 justify-center">
-          <div className="md:w-4/6 mx-4 md:mx-0 flex">
+        <div className="md:container md:mx-auto flex flex-col items-center justify-center">
+          <div className="lg:w-4/6 mx-4 md:mx-0 flex">
             <div className=" lg:w-2/3 text-blue">
-              <h3 className="text-3xl w-full mb-6">Hi!</h3>
+              <h3 className="text-3xl w-full mb-6 mt-14">Welcome here!</h3>
               <p>
                 Hi! I am a results-driven frontend developer with a deep passion
                 for creating captivating user experiences. With [number] years
@@ -49,9 +49,9 @@ const About = ({ changePage }) => {
               className="hidden lg:block w-1/3"
             />
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <h3 className="md:w-4/6 text-blue text-3xl">My skills</h3>
-            <div className="md:w-4/6 flex flex-wrap gap-5 justify-center">
+          <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col items-center gap-4 text-blue">
+            <h3 className="text-3xl w-full mb-6 mt-14">My skills</h3>
+            <div className=" flex flex-wrap justify-center md:justify-between gap-4">
               {skills?.map((skill, i) => (
                 <SkillCard
                   key={i}
