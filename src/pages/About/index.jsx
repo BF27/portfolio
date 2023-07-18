@@ -24,7 +24,7 @@ const About = ({ changePage }) => {
       <Header />
       <MainContainer>
         <div className="lg:w-4/6 mx-4 md:mx-0 flex items-end">
-          <div className=" lg:w-3/4 text-blue">
+          <div className=" lg:w-3/4 mb-6 text-blue">
             <Title title={"Welcome Here!"} />
             <p>
               I'm a motivated frontend developer with a strong desire to
