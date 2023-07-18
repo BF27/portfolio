@@ -40,7 +40,7 @@ const About = ({ changePage }) => {
             className="hidden lg:block w-1/4"
           />
         </div>
-        <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col items-center gap-4 text-blue">
+        <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col items-center gap-4 text-blue mt-4">
           <Title title="My skills" />
           <div className=" flex flex-wrap justify-center md:justify-between gap-4">
             {skills?.map((skill, i) => (
