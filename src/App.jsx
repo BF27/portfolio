@@ -47,6 +47,7 @@ function App() {
                   path="/contact"
                   element={<Contact changePage={changePage} />}
                 />
+                <Route path="*" element={<About changePage={changePage} />} />
               </Routes>
             )}
           </ActualPageContext.Provider>
