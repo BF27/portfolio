@@ -22,7 +22,7 @@ const Contact = ({ changePage }) => {
       <MainContainer>
         <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col items-center">
           <Title title={"Send me a message!"} />
-          <div className="border-4 border-blue w-full lg:w-2/3 p-4">
+          <div className="border-4 border-blue w-full p-4">
             <ContactForm showEmailSent={showEmailSent} />
           </div>
           {emailSent ? (
