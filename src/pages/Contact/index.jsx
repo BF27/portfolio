@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import ContactForm from "./components/ContactForm";
 import MainContainer from "../../components/MainContainer";
 import Title from "../../components/Title";
+import PropTypes from "prop-types";
 
 const Contact = ({ changePage }) => {
   const [emailSent, setEmailSent] = useState(false);
@@ -14,14 +15,14 @@ const Contact = ({ changePage }) => {
 
   useEffect(() => {
     changePage("contact");
-  }, []);
+  }, [changePage]);
   return (
     <>
       <Header />
       <MainContainer>
         <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col items-center">
           <Title title={"Send me a message!"} />
-          <div className="border-4 border-blue md:w-1/2 p-4">
+          <div className="border-4 border-blue w-full lg:w-2/3 p-4">
             <ContactForm showEmailSent={showEmailSent} />
           </div>
           {emailSent ? (
@@ -40,6 +41,10 @@ const Contact = ({ changePage }) => {
       </MainContainer>
     </>
   );
+};
+
+Contact.propTypes = {
+  changePage: PropTypes.func.isRequired,
 };
 
 export default Contact;

@@ -1,10 +1,10 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 const ProjectImage = ({ imgUrl, page }) => {
   return (
     <div className="overflow-hidden">
       {page ? (
-        <a href={page} target="_blank">
+        <a href={page} target="_blank" rel="noreferrer">
           <img
             src={imgUrl}
             alt="ben&jud"
@@ -20,6 +20,11 @@ const ProjectImage = ({ imgUrl, page }) => {
       )}
     </div>
   );
+};
+
+ProjectImage.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  page: PropTypes.string,
 };
 
 export default ProjectImage;

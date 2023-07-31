@@ -1,5 +1,6 @@
 import InputLine from "../InputLine";
 import emailjs from '@emailjs/browser';
+import PropTypes from "prop-types";
 
 const ContactForm = ({showEmailSent}) => {
   const handleSubmit = (e) => {
@@ -7,7 +8,6 @@ const ContactForm = ({showEmailSent}) => {
     emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, e.target, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     e.target.reset();
     showEmailSent();
-    
   };
 
   return (
@@ -23,6 +23,10 @@ const ContactForm = ({showEmailSent}) => {
       </button>
     </form>
   );
+};
+
+ContactForm.propTypes = {
+  showEmailSent: PropTypes.func.isRequired,
 };
 
 export default ContactForm;

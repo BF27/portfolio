@@ -5,6 +5,7 @@ import MainContainer from "../../components/MainContainer";
 import Title from "../../components/Title";
 import Header from "../../components/Header";
 import ProjectCard from "./components/ProjectCard";
+import PropTypes from "prop-types";
 
 const Projects = ({ changePage }) => {
   const [projects, setProjects] = useState(null);
@@ -16,15 +17,15 @@ const Projects = ({ changePage }) => {
     };
     getSkills();
     changePage("projects");
-  }, []);
+  }, [changePage]);
 
   return (
     <>
       <Header />
       <MainContainer>
-        <div className="lg:w-4/6 mx-4 md:mx-0 flex flex-col">
+        <div className="lg:w-4/6 mx-0 flex flex-col">
           <Title title={"check Them out!"} />
-          <div className="flex flex-wrap justify-center md:justify-between gap-4">
+          <div className="flex flex-wrap justify-center xl:justify-between gap-4">
             {projects?.map((project, i) => (
               <ProjectCard project={project} key={i} />
             ))}
@@ -33,6 +34,10 @@ const Projects = ({ changePage }) => {
       </MainContainer>
     </>
   );
+};
+
+Projects.propTypes = {
+  changePage: PropTypes.func.isRequired,
 };
 
 export default Projects;

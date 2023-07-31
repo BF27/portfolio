@@ -2,6 +2,7 @@ import ProjectImage from "../ProjectImage";
 import ProjectLinks from "../ProjectLinks";
 import ProjectStacks from "../ProjectStacks";
 import ProjectTitle from "../ProjectTitle";
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -12,6 +13,10 @@ const ProjectCard = ({ project }) => {
       <ProjectLinks github={project.links.github} page={project.links.page} />
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequired,
 };
 
 export default ProjectCard;

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const InputLine = ({ textarea, type, name }) => {
   return (
     <div className="flex flex-col">
@@ -21,6 +23,12 @@ const InputLine = ({ textarea, type, name }) => {
       )}
     </div>
   );
+};
+
+InputLine.propTypes = {
+  textarea: PropTypes.bool,
+  type: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 
 export default InputLine;
