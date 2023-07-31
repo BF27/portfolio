@@ -38,7 +38,7 @@ const About = ({ changePage }) => {
           <img
             src={profilePhoto}
             alt="Profile photo"
-            className="hidden lg:block w-1/4"
+            className="hidden lg:block w-1/4 mt-4"
           />
         </div>
         <div className="lg:w-4/6 mx-0 flex flex-col items-center gap-4 text-blue">
